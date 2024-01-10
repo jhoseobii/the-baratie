@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Us</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+        overflow: hidden;
+        background-color: transparent;
+        }
+
+        .topnav a {
+        float: left;
+        color: #FFF7EF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: #4E4187;
+        color: #FFF7EF;
+        }
+
+        /* Create a right-aligned (split) link inside the navigation bar */
+        .topnav a.split {
+        float: right;
+        color: #FFF7EF;
+        }
+        .topnav a.split:hover {
+        background-color: #4E4187;
+        color: #FFCFF6;
+        }
+
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+        overflow: hidden;
+        background-color: transparent;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        }
+
+        .navbar a {
+        float: right;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .navbar a:hover {
+        background: #4E4187;
+        color: #FFF7EF;
+        }
+
+        .main {
+        padding: 16px;
+        margin-bottom: 30px;
+        }
+        body .rate-box {
+            text-align: left;
+            width: 45%;
+            margin-top: 5%;
+            border:3px solid rgb(255, 244, 244);
+            height: 400px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 2%;
+            overflow: auto;
+        }
+        body .rate-box input {
+                display:flex;
+        justify-content: flex-start;
+        width: 30%;
+        
+            }
+
+            body .rate-box button {
+                border: 2px solid white;
+                margin-top: 25px;
+                background-color: transparent;
+                color: white;                
+
+            }
+            body .rate-box label {
+        color:white;
+        display:flex;
+        justify-content: flex-start;
+
+        }
+    </style>
+</head>
+<body style="background-image: url(https://f.vividscreen.info/soft/67f976fed988f937d214c097eb2657a0/Sushi-Plate-1920x1200.jpg); background-size: cover;" >
+    <div class="topnav">
+        <a href="menu.html">MENU</a>
+        <a href="reservation.html">RESERVATION</a>
+        <a href="home_delivery.html">HOME DELIVERY</a>
+        <a href="rate_us.html" class="split">RATE US</a>
+    </div>
+<div class="rate-box">
+    <label>Enter your full name</label>
+        <br>
+       <input type="text" required></input>
+       <br>
+       <label>Enter valid email address</label>
+       <br>
+       <input type="text" required></input>
+       <br>
+       <label>Enter valid phone number</label>
+       <br>
+       <input type="text" required></input>
+       <br>
+       <label>Select date and time of booking</label>
+       <br>
+       <input type="datetime-local" required></input>
+       <br>
+       <label>Dine In / Take Out?</label>
+       <br>
+       <input type="radio" name="dine-type" value="dine-in"><label for="dine-in">DINE IN</label>
+       <input type="radio" name="dine-type" value="dine-out"><label for="dine-out">DINE OUT</label>
+       <br>
+       <label>How was the restaurant's ambience?</label>
+       <br>
+       <input type="radio" name="rate-type1" value="1"><label for="rate-type1">1</label>
+       <input type="radio" name="rate-type1" value="2"><label for="rate-type1">2</label>
+       <input type="radio" name="rate-type1" value="3"><label for="rate-type1">3</label>
+       <input type="radio" name="rate-type1" value="4"><label for="rate-type1">4</label>
+       <input type="radio" name="rate-type1" value="5"><label for="rate-type1">5</label>
+       <br>
+       <label>How was the restaurant's food service?</label>
+       <br>
+       <input type="radio" name="rate-type2" value="1"><label for="rate-type2">1</label>
+       <input type="radio" name="rate-type2" value="2"><label for="rate-type2">2</label>
+       <input type="radio" name="rate-type2" value="3"><label for="rate-type2">3</label>
+       <input type="radio" name="rate-type2" value="4"><label for="rate-type2">4</label>
+       <input type="radio" name="rate-type2" value="5"><label for="rate-type2">5</label>
+       <br>
+       <label>How was the restaurant's food quality?</label>
+       <br>
+       <input type="radio" name="rate-type3" value="1"><label for="rate-type3">1</label>
+       <input type="radio" name="rate-type3" value="2"><label for="rate-type3">2</label>
+       <input type="radio" name="rate-type3" value="3"><label for="rate-type3">3</label>
+       <input type="radio" name="rate-type3" value="4"><label for="rate-type3">4</label>
+       <input type="radio" name="rate-type3" value="5"><label for="rate-type3">5</label>
+       <br>
+       <label>How likely are you to recommend us to your friends/family?</label>
+       <br>
+       <input type="radio" name="rate-type4" value="1"><label for="rate-type4">1</label>
+       <input type="radio" name="rate-type4" value="2"><label for="rate-type4">2</label>
+       <input type="radio" name="rate-type4" value="3"><label for="rate-type4">3</label>
+       <input type="radio" name="rate-type4" value="4"><label for="rate-type4">4</label>
+       <input type="radio" name="rate-type4" value="5"><label for="rate-type4">5</label>
+       <br>
+       <button value="Submit" id="submission" onclick="alert('Thank you for your valuable feedback!')">Submit</button>
+</div>     
+<h2 style="color: white;">Thank you, do visit us again!</h2> 
+</body>
+</html>
